@@ -1,0 +1,47 @@
+{% extends "Layout.twig" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/blog/main.css">
+<title>Blog - O'Pure</title>
+{% endblock %}
+
+{% block content %}
+<div class="hero">
+</div>
+<div class="section1">
+  <div class="container">
+    <div class="title--primary">
+      <h1>Nos derniers articles</h1>
+    </div>
+    <div class="desc">
+      <div class="cards">
+        <div class="card">
+          <img class="card__img" src="./assets/img/blog/section1/1.png" />
+          <div class="card__content">
+            <h2 class="card__content__title">L’efficacité d’un filtre opure</h2>
+            <p class="card__content__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+            <a href="{{ path_for('filtreopure') }}"><button class="card__content__btn button--primary pink">Lire la suite</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./assets/img/blog/section1/2.png" />
+          <div class="card__content">
+            <h2 class="card__content__title">Adoucisseur ou flitre ?</h2>
+            <p class="card__content__desc">It is a long established fact that a reader will be distracted .The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+            <button class="card__content__btn button--primary pink">Lire la suite</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./assets/img/blog/section1/3.png" />
+          <div class="card__content">
+            <h2 class="card__content__title">Préservez votre santé</h2>
+            <p class="card__content__desc">Une douche qui laisse la peau douce et les cheveux brillants, Le calcaire peut créer des rougeurs, souvent chez les enfants et les femmes.</p>
+            <button class="card__content__btn button--primary pink">Lire la suite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

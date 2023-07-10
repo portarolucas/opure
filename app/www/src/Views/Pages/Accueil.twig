@@ -1,0 +1,197 @@
+{% extends "Layout.twig" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/accueil/main.css">
+<title>Accueil - O'Pure</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="hero">
+  <div class="slide">
+    <div class="slide__container container">
+      <h1 class="title">Une eau sans indésirables</h1>
+      <p class="desc">Buvez à votre santé chaque matin à la tienne
+        Etienne ! On boit à nous cool !
+      </p>
+      <div class="button-block">
+        <a href="{{ path_for('filtreopure') }}"><button class="button--secondary pink" type="button">Pourquoi utiliser un filtre ?</button></a>
+        <button class="button--primary pink" type="button">Découvrir nos filtres</button>
+      </div>
+      <div class="slide-pagination">
+        <img class="slide-pagination__prev" src="./assets/img/accueil/hero/left-arrow.svg" alt="Slide précédent">
+        <div class="slide-pagination_circle is--active"></div>
+        <div class="slide-pagination_circle"></div>
+        <div class="slide-pagination_circle"></div>
+        <div class="slide-pagination_circle"></div>
+        <img class="slide-pagination__next" src="./assets/img/accueil/hero/left-arrow.svg" alt="Slide suivant">
+      </div>
+    </div>
+    <img class="slide__image" src="./assets/img/accueil/hero/drink-water.jpg" alt="Femme qui boit de l'eau">
+  </div>
+</div>
+<div class="section1">
+  <div class="container">
+    <div class="title--primary">
+      <h1>Nos solutions pour une eau de qualité</h1>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-content">
+          <div class="left">
+            <img class="card__img" src="./assets/img/accueil/section1/adoucisseur.jpg"/>
+          </div>
+          <div class="right">
+            <h1 class="card__title">Adoucisseur O’PURE</h1>
+            <p class="card__desc">Une douche plus seine, votre linge doux et bien encore</p>
+          </div>
+        </div>
+        <div class="card-content-more">
+          <hr>
+          <ul>
+            <li>Vos appareils ménagers protégés</li>
+            <li>Votre peau et votre linge plus doux</li>
+            <li>Produit fabriqué en france <span class="emoj-block"><span class="emoj--france"></span></span></li>
+          </ul>
+        </div>
+        <button class="card__btn button--secondary pink" type="button" name="button">Découvrir</button>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="left">
+            <img class="card__img" src="./assets/img/accueil/section1/filtre.jpg"/>
+          </div>
+          <div class="right">
+            <h1 class="card__title">Filtre O’PURE</h1>
+            <p class="card__desc">Une douche plus seine, votre linge doux et bien encore</p>
+          </div>
+        </div>
+        <div class="card-content-more">
+          <hr>
+          <ul>
+            <li>Une eau de boisson sans mauvais goût</li>
+            <li>Une eau plus pure sans micropolluants</li>
+            <li>Une eau de qualité pour boire et cuisiner</li>
+          </ul>
+        </div>
+        <button class="card__btn button--secondary pink" type="button" name="button">Découvrir</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section2">
+  <article class="article">
+    <div class="article__container">
+      <div class="title title--primary">
+        <h1>préservez votre santé</h1>
+      </div>
+      <p class="desc">Une douche qui laisse la peau douce et les cheveux brillants, Le calcaire peut créer des rougeurs, souvent chez les enfants et les femmes, jusqu'à entrainer chez certaines personnes de vrais problèmes de peau comme le psoriasis ou la dermatite atopique.
+        Une eau douce est la clé d’une hygiène domestique parfaite.
+      </p>
+      <a class="morelink" href="#">En savoir plus sur nos adoucisseurs <img class="morelink__arrow" src="./assets/img/accueil/section2/arrow-to-right.svg"/></a>
+    </div>
+    <img class="article__img" src="./assets/img/accueil/section2/family-outside.jpg" alt="Famille en bonne santé"/>
+  </article>
+  <article class="article">
+    <div class="article__container">
+      <div class="title title--primary">
+        <h1>Un confort accru</h1>
+      </div>
+      <p class="desc">Un verre d’eau douce et naturel direct au robinet, une cuisine plus savoureuse et débarassée des arrières-goûts. Éliminé les traces de médicaments, pesticides, aluminium... qui polu votre eau !
+        Nos filtres O’Pure vous changerons la vie.
+      </p>
+      <a class="morelink" href="#">En savoir plus sur nos adoucisseurs <img class="morelink__arrow" src="./assets/img/accueil/section2/arrow-to-right.svg"/></a>
+    </div>
+    <img class="article__img" src="./assets/img/accueil/section2/robinet.jpg" alt="Eau meilleure"/>
+  </article>
+  <article class="article">
+    <div class="article__container">
+      <div class="title title--primary">
+        <h1>Des économies jusqu’à 60%</h1>
+      </div>
+      <p class="desc">Dites stop aux bouteilles en plastique en vous servant directement au robinet, effectuer par la même occasion un geste simple et efficace pour l’environement !
+        Celon l’institut indépendant Battelle Memorial Institue, Colombus, Ohio, USA usqu’à 70% d’économie en détergent en lave vaisselle sur eau adoucie par rapport aux besoins en eau dure.
+      </p>
+      <a class="morelink" href="#">En savoir plus sur nos adoucisseurs <img class="morelink__arrow" src="./assets/img/accueil/section2/arrow-to-right.svg"/></a>
+    </div>
+    <img class="article__img" src="./assets/img/accueil/section2/tirelire-3.jpg" alt="Des économies d'argent"/>
+  </article>
+</div>
+<div class="section3">
+  <div class="cards container">
+    <div class="card">
+      <div class="card__img-block">
+        <img class="card__img" src="./assets/img/accueil/section3/dash.svg">
+      </div>
+      <h1 class="card__title">Diagnostic offert</h1>
+      <p class="card__desc">Nos techniciens effecturont un test de calcaire gratuitement à votre domicile.</p>
+    </div>
+    <div class="card">
+      <div class="card__img-block">
+        <img class="card__img" src="./assets/img/accueil/section3/men_atwork.svg">
+      </div>
+      <h1 class="card__title">Installation par nos experts</h1>
+      <p class="card__desc">Un technicien viendra installer la ou les appareils choisi.</p>
+    </div>
+    <div class="card">
+      <div class="card__img-block">
+        <img class="card__img" src="./assets/img/accueil/section3/maintenance.svg">
+      </div>
+      <h1 class="card__title">Maitenance de vos produits</h1>
+      <p class="card__desc">Tous les 5 mois nous viendrons effectuer une maintenance de votre adoucisseur O’Pure.</p>
+    </div>
+  </div>
+</div>
+<div class="section4">
+  <article class="article">
+    <img class="article__img" src="./assets/img/accueil/section4/house-exterior.jpg" alt="Maison de famille">
+    <div class="article__container">
+      <div class="title--primary">
+        <h1 class="title">O’Pure spécialiste de l’eau</h1>
+      </div>
+      <div class="desc">
+        <p>Particulier ou entreprise ? O’Pure apporte quotidiennelent une eau pure et sans calcaire à de nombreux particuliers et entreprises.
+          <br><br>
+          Grâce aux adoucisseurs et filtres O’Pure :<br><br>
+        </p>
+        <ul>
+          <li>Protégez votre maison et vos domestiques</li>
+          <li>Présevez votre santé et la santé de vos enfants</li>
+          <li>Réduisez votre consommation et le prix de vos entretiens</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <hr class="separator--multicolor">
+  <article class="article">
+    <img class="article__img" src="./assets/img/accueil/section4/map.png" alt="Zone de déplacement">
+    <div class="article__container">
+      <div class="title--primary">
+        <h1 class="title">Implantation</h1>
+      </div>
+      <div class="desc">
+        <p>Implanté dans le VAR nous sommes disponible dans toute la région Provence-Alpes-Côte d’Azur :<br><br>
+        </p>
+        <ul>
+          <li>Vaucluse</li>
+          <li>Hautes Alpes</li>
+          <li>Bouches du rhône</li>
+          <li>Var</li>
+          <li>Aples de haute-provence</li>
+          <li>Alpes maritimes</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+  integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="./assets/js/pages/accueil/hero.js"></script>
+<script src="./assets/js/pages/accueil/onscroll.js"></script>
+{% endblock %}

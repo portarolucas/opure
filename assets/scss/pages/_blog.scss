@@ -1,0 +1,339 @@
+.blog-page{
+    .hero{
+        margin-top: 6.5rem;//xs nav height //// COMBAK: metrre pour les mediaqueries hauteur change
+        position: relative;
+        height: 20rem;
+        background-image: url('../img/pages/blog/hero/hero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        box-shadow: inset 5px 5px 13px 4px rgba(0,0,0,0.25);
+      
+        @include sm{
+          height: 20rem;
+        }
+        @include md{
+          height: 25rem;
+        }
+        @include lg{
+          height: 35rem;
+        }
+        @include xl{
+          height: 35rem;
+        }
+      
+        &:after{
+          content: ' ';
+          z-index: 10;
+          display: block;
+          position: absolute;
+          height : 0;
+          width : 0;
+          border-left: 30px solid #ffffff;
+          border-top: 100vw solid transparent;
+          bottom: 15px;
+          right: -15px;
+          transform: rotate(270deg);
+          transform-origin: bottom;
+      
+          @include md{
+            border-left: 60px solid #ffffff;
+            bottom: 30px;
+            right: -30px;
+          }
+          @include lg{
+            border-left: 80px solid #ffffff;
+            bottom: 40px;
+            right: -40px;
+          }
+          @include xl{
+            border-left: 80px solid #ffffff;
+            bottom: 40px;
+            right: -40px;
+          }
+        }
+      
+        @include md{
+          margin-top: 8rem;
+        }
+        @include lg{
+          margin-top: 10rem;
+        }
+        @include xl{
+          margin-top: 10rem;
+        }
+      
+      }
+
+
+      .section1{
+        margin-top: $margin-y-medium-size-xs;
+        margin-bottom: $margin-y-medium-size-xs;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        @include sm{
+          margin-top: $margin-y-medium-size-sm;
+          margin-bottom: $margin-y-medium-size-sm;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include md{
+          width: $max-size-md;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include lg{
+          width: $max-size-lg;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include xl{
+          width: $max-size-xl;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+      
+      
+        .desc{
+      
+          .cards{
+            margin-top: $margin-y-medium-size-xs;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 4vw;
+      
+            @include sm{
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 4vw;
+            }
+            @include md{
+              width: $max-size-md;
+              margin-left: auto;
+              margin-right: auto;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 6vw;
+            }
+            @include lg{
+              width: $max-size-lg;
+              margin-left: auto;
+              margin-right: auto;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 4vw;
+            }
+            @include xl{
+              width: $max-size-xl;
+              margin-left: auto;
+              margin-right: auto;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 4vw;
+            }
+      
+            .card{
+              font-family: $font-raleway;
+              background-color: #ffffff;
+              box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
+              border-radius: 13px;
+              width: 100%;
+              //margin-top: $margin-y-medium-size-xs;
+      
+      
+              &:first-child{
+                margin-top: 0;
+              }
+              .card__img{
+                width: 100%;
+                border-radius: 13px 13px 0 0;
+              }
+      
+              .card__content{
+                padding: $padding-x-medium-size-xs;
+      
+                @include sm{
+                  padding: $padding-x-medium-size-sm;
+                }
+                @include md{
+                  padding: $padding-x-medium-size-md;
+                }
+                @include lg{
+                  padding: $padding-x-medium-size-md;
+                }
+                @include xl{
+                  padding: $padding-x-medium-size-md;
+                }
+                .card__content__title{
+                  font-size: $font-large-size-xs;
+                  font-weight: 900;
+                  color: $color-primary;
+                  text-transform: uppercase;
+                }
+                .card__content__desc{
+                  margin-top: calc($margin-y-medium-size-xs / 2);
+                  font-size: $font-medium-size-xs;
+                  color: #000000;
+                }
+                .card__content__btn{
+                  margin-top: $margin-y-medium-size-xs;
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section2{
+        margin-top: $margin-y-medium-size-xs;
+        margin-bottom: $margin-y-medium-size-xs;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        @include sm{
+          margin-top: $margin-y-medium-size-sm;
+          margin-bottom: $margin-y-medium-size-sm;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include md{
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include lg{
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include xl{
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+      
+        .desc{
+          margin-top: $margin-y-medium-size-xs;
+          @include sm{
+            margin-top: calc($margin-y-medium-size-sm / 1.5);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+          @include md{
+            margin-top: calc($margin-y-medium-size-md / 2.2);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+          @include lg{
+            margin-top: calc($margin-y-medium-size-md / 2);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+          @include xl{
+            margin-top: calc($margin-y-medium-size-md / 2);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+      
+          .input__group{
+            margin-top: calc($margin-y-medium-size-xs / 2);
+            width: 70%;
+            @include sm{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            @include md{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            @include lg{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            @include xl{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            &:first-child{
+              margin-top: 0;
+            }
+            input, textarea{
+              width: 100%;
+            }
+          }
+      
+          p.information{
+            margin-top: 1.5rem;
+            padding-left: 1rem;
+            color: #C4C4C4;
+            font-family: $font-raleway;
+            font-size: $font-medium-size-xs;
+            position: relative;
+            @include sm{
+              font-size: $font-medium-size-sm;
+            }
+            @include md{
+              font-size: $font-medium-size-md;
+            }
+            @include lg{
+              font-size: $font-medium-size-lg;
+            }
+            @include xl{
+              font-size: $font-medium-size-lg;
+            }
+      
+            &:before{
+              content: '*';
+              position: absolute;
+              top: 0;
+              left: 0;
+              font-family: $font-raleway;
+              font-size: $font-medium-size-xs;
+              color: $color-pink;
+              @include sm{
+                font-size: $font-medium-size-sm;
+              }
+              @include md{
+                font-size: $font-medium-size-md;
+              }
+              @include lg{
+                font-size: $font-medium-size-lg;
+              }
+              @include xl{
+                font-size: $font-medium-size-lg;
+              }
+            }
+          }
+        }
+      }
+}

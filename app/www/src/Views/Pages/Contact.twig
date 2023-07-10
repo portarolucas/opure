@@ -1,0 +1,72 @@
+{% extends "Layout.twig" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/contact/main.css">
+<title>Contact - O'Pure</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="hero">
+  <div class="hero__content">
+    <h1>Contacter notre équipe</h1>
+  </div>
+</div>
+<div class="section1">
+  <div class="container">
+    <div class="title--primary">
+      <h1>Par appel ou par mail</h1>
+    </div>
+    <div class="desc">
+      <div class="desc__block">
+        <img src="./assets/img/contact/section1/phone.svg"/>
+        <p>Appelez nous au <br><span class="color">06 56 89 09 78</span></p>
+      </div>
+      <div class="desc__block">
+        <img src="./assets/img/contact/section1/mail.svg"/>
+        <p>Ecrivez nous à <br><span class="color">contact@opure-paca.fr</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section2">
+  <div class="container">
+    <div class="title--primary">
+      <h1>Via notre formulaire de contact</h1>
+    </div>
+    <div class="desc">
+      <div class="input__group required">
+        <h3>Prénom</h3>
+        <input type="text" name="" placeholder="Votre prénom"/>
+      </div>
+      <div class="input__group required">
+        <h3>Nom</h3>
+        <input type="text" name="" placeholder="Votre nom"/>
+      </div>
+      <div class="input__group">
+        <h3>Adresse</h3>
+        <input type="text" name="" placeholder="Votre adresse"/>
+      </div>
+      <div class="input__group">
+        <h3>Code postal suivi de la ville</h3>
+        <input type="text" name="" placeholder="Votre code postal et ville"/>
+      </div>
+      <div class="input__group required">
+        <h3>Adresse mail</h3>
+        <input type="text" name="" placeholder="Votre adresse mail"/>
+      </div>
+      <div class="input__group required">
+        <h3>Numéro de téléphone</h3>
+        <input type="text" name="" placeholder="Votre numéro de téléphone"/>
+      </div>
+      <div class="input__group textarea required">
+        <h3>Message</h3>
+        <textarea rows="8" name="" placeholder="Votre message"></textarea>
+      </div>
+      <p class="information">O’Pure traite les données recueillies pour répondre à votre demande de rendez-vous à votre domicile avec un conseiller commercial et vous fournir des informations sur nos produits. Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à notre politique de confidentialité comme indiqué ici.</p>
+      <input type="submit" name="" value="Envoyer" />
+    </div>
+  </div>
+</div>
+
+{% endblock %}

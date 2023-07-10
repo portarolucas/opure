@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Accueil - O'Pure</title>
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="./assets/img/logo.ico">
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="overlaydropdown">
+    </div>
+    <nav class="nav">
+      <div class="nav__container container">
+        <a href="./accueil.html">
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="OPure logo">
+            <h1>O<span class="color">'</span>Pure</h1>
+          </div>
+        </a>
+        <div class="large-section">
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="selected"><a class="menu-list__link" href="./accueil.html">Accueil</a></li>
+              <li class="menu-list__dropdown">
+                <a class="menu-list__link" href="#" onclick="event.preventDefault();">Nos services</a>
+                <div class="dropdown">
+                  <div class="dropdown-container container">
+                    <div class="dropdown-container__content nos-services">
+                      <div class="dropdown-content__item">
+                        <div class="dropdown-item__preface">
+                          <img class="item-preface__img" src="./assets/img/nav/filtre.png" />
+                          <div class="item-preface__desc">
+                            <h1 class="dropdown-item__title">Filtre</h1>
+                            <h4 class="dropdown-item__desc">Utiliser un filtre OPure pour retirer les bactéries de votre
+                              eau</h4>
+                          </div>
+                        </div>
+                        <hr class="dropdown-item__separator">
+                        <ul class="dropdown-item__list">
+                          <li><a href="#">Qu'est-ce qu'un filtre ?</a></li>
+                          <li><a href="#">Le filtre O'Pure</a></li>
+                          <li><a href="#">L'entretien d'un filtre</a></li>
+                          <li><a href="#">Les bienfaits d'un filtre sur votre santé</a></li>
+                          <li><a href="#">La différence entre un filtre et un adoucisseur</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-content__item">
+                        <div class="dropdown-item__preface">
+                          <img class="item-preface__img" src="./assets/img/nav/adoucisseur.png" />
+                          <div class="item-preface__desc">
+                            <h1 class="dropdown-item__title">Adoucisseur</h1>
+                            <h4 class="dropdown-item__desc">Utiliser un adoucisseur OPure pour retirer les bactéries de
+                              votre eau</h4>
+                          </div>
+                        </div>
+                        <hr class="dropdown-item__separator">
+                        <ul class="dropdown-item__list">
+                          <li><a href="#">Qu'est-ce qu'un adoucisseur ?</a></li>
+                          <li><a href="#">Le adoucisseur O'Pure</a></li>
+                          <li><a href="#">L'entretien d'un adoucisseur</a></li>
+                          <li><a href="#">Les bienfaits d'un adoucisseur sur votre santé</a></li>
+                          <li><a href="#">La différence entre un adoucisseur et un adoucisseur</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a class="menu-list__link" href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html"><button class="button--secondary">Nous contacter</button></a></li>
+            </ul>
+          </div>
+          <div class="phone-icon">
+            <a href="tel:0683104167"><img src="./assets/img/nav/phone.svg" alt="Téléphone" /></a>
+          </div>
+        </div>
+        <div class="menu-burger">
+          <div class="menu__line line-1"></div>
+          <div class="menu__line line-2"></div>
+          <div class="menu__line line-3"></div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <div class="content accueil-page">
+    <div class="hero" style="--bg-image: url('./assets/img/pages/accueil/hero/drink-water.jpg');">
+      <div class="slide" data-slide-order="0">
+        <div class="slide__container container">
+          <h1 class="title">Une eau sans indésirables</h1>
+          <p class="desc">Buvez à votre santé chaque matin à la tienne
+            Etienne ! On boit à nous cool !
+          </p>
+          <div class="button-block">
+            <a href="../blog-article/index.html"><button class="button--primary pink" type="button">Pourquoi utiliser un
+                filtre ?</button></a>
+            <button class="button--primary" type="button">Découvrir nos filtres</button>
+          </div>
+        </div>
+        <img class="slide__image" src="./assets/img/pages/accueil/hero/drink-water.jpg" alt="Femme qui boit de l'eau">
+      </div>
+      <div class="slide" data-slide-order="1" style="display: none;">
+        <div class="slide__container container">
+          <h1 class="title">Une peau saine</h1>
+          <p class="desc">Ayez une peau plus seine et protégez votre famille.
+          </p>
+          <div class="button-block">
+            <a href="../blog-article/index.html"><button class="button--primary" type="button">Pourquoi utiliser un
+                filtre ?</button></a>
+            <button class="button--primary pink" type="button">Découvrir nos filtres</button>
+          </div>
+        </div>
+        <img class="slide__image" src="./assets/img/pages/accueil/hero/shower.jpg" alt="Prendre sa douche sans impurté">
+      </div>
+      <!--<div class="slide" data-slide-order="2" style="display: none;">
+          <div class="slide__container container">
+            <h1 class="title">Protégez vos clients des impurtés</h1>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi minima, accusamus iusto.
+            </p>
+            <div class="button-block">
+              <a href="../blog-article/index.html"><button class="button--secondary pink" type="button">Pourquoi utiliser un filtre ?</button></a>
+              <button class="button--primary pink" type="button">Découvrir nos filtres</button>
+            </div>
+          </div>
+          <img class="slide__image" src="./assets/img/pages/accueil/hero/restaurant.jpg" alt="Prendre sa douche sans impurté">
+        </div>-->
+      <div class="slide-pagination container">
+        <img class="slide-pagination__prev" src="./assets/img/pages/accueil/hero/left-arrow.svg" alt="Slide précédent">
+        <div class="slide-pagination_circle"></div>
+        <img class="slide-pagination__next" src="./assets/img/pages/accueil/hero/left-arrow.svg" alt="Slide suivant">
+      </div>
+    </div>
+    <div class="section1">
+      <div class="container">
+        <div class="title--primary">
+          <h1>Nos solutions pour une eau de qualité</h1>
+        </div>
+        <div class="cards">
+          <a href="#" class="card">
+            <div class="card-content">
+              <div class="left">
+                <img class="card__img" src="./assets/img/pages/accueil/section1/adoucisseur.png" />
+              </div>
+              <div class="right">
+                <h1 class="card__title">Adoucisseur O’PURE</h1>
+                <p class="card__desc">Une douche plus seine, votre linge doux et bien encore</p>
+              </div>
+            </div>
+            <div class="card-content-more">
+              <hr>
+              <ul>
+                <li>Vos appareils ménagers protégés</li>
+                <li>Votre peau et votre linge plus doux</li>
+                <li>Produit fabriqué en france <span class="emoj-block"><span class="emoj--france"></span></span></li>
+              </ul>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-content">
+              <div class="left">
+                <img class="card__img" src="./assets/img/pages/accueil/section1/filtre.png" />
+              </div>
+              <div class="right">
+                <h1 class="card__title">Filtre O’PURE</h1>
+                <p class="card__desc">Une douche plus seine, votre linge doux et bien encore</p>
+              </div>
+            </div>
+            <div class="card-content-more">
+              <hr>
+              <ul>
+                <li>Une eau de boisson sans mauvais goût</li>
+                <li>Une eau plus pure sans micropolluants</li>
+                <li>Une eau de qualité pour boire et cuisiner</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="section2">
+      <article class="article">
+        <div class="article__container">
+          <div class="title title--primary">
+            <h1>préservez votre santé</h1>
+          </div>
+          <p class="desc">Une douche qui laisse la peau douce et les cheveux brillants, Le calcaire peut créer des
+            rougeurs, souvent chez les enfants et les femmes, jusqu'à entrainer chez certaines personnes de vrais
+            problèmes de peau comme le psoriasis ou la dermatite atopique.
+            Une eau douce est la clé d’une hygiène domestique parfaite.
+          </p>
+          <a class="morelink" href="#">En savoir plus sur nos adoucisseurs <img class="morelink__arrow"
+              src="./assets/img/pages/accueil/section2/arrow-to-right.svg" /></a>
+        </div>
+        <img class="article__img" src="./assets/img/pages/accueil/section2/family-outside.jpg" loading="lazy"
+          alt="Famille en bonne santé" />
+      </article>
+      <article class="article">
+        <div class="article__container">
+          <div class="title title--primary">
+            <h1>Un confort accru</h1>
+          </div>
+          <p class="desc">Un verre d’eau douce et naturel direct au robinet, une cuisine plus savoureuse et débarassée
+            des arrières-goûts. Éliminé les traces de médicaments, pesticides, aluminium... qui polu votre eau !
+            Nos filtres O’Pure vous changerons la vie.
+          </p>
+          <a class="morelink" href="#">En savoir plus sur nos adoucisseurs <img class="morelink__arrow"
+              src="./assets/img/pages/accueil/section2/arrow-to-right.svg" /></a>
+        </div>
+        <img class="article__img" src="./assets/img/pages/accueil/section2/robinet.jpg" loading="lazy"
+          alt="Eau meilleure" />
+      </article>
+      <article class="article">
+        <div class="article__container">
+          <div class="title title--primary">
+            <h1>Des économies jusqu’à 60%</h1>
+          </div>
+          <p class="desc">Dites stop aux bouteilles en plastique en vous servant directement au robinet, effectuer par
+            la même occasion un geste simple et efficace pour l’environement !
+            Celon l’institut indépendant Battelle Memorial Institue, Colombus, Ohio, USA usqu’à 70% d’économie en
+            détergent en lave vaisselle sur eau adoucie par rapport aux besoins en eau dure.
+          </p>
+          <a class="morelink" href="#">En savoir plus sur nos adoucisseurs <img class="morelink__arrow"
+              src="./assets/img/pages/accueil/section2/arrow-to-right.svg" /></a>
+        </div>
+        <img class="article__img" src="./assets/img/pages/accueil/section2/tirelire-3.jpg" loading="lazy"
+          alt="Des économies d'argent" />
+      </article>
+    </div>
+    <div class="section3">
+      <div class="cards container">
+        <div class="card">
+          <div class="card__img-block">
+            <img class="card__img" src="./assets/img/pages/accueil/section3/dash.svg">
+          </div>
+          <h1 class="card__title">Diagnostic offert</h1>
+          <p class="card__desc">Nos techniciens effecturont un test de calcaire gratuitement à votre domicile.</p>
+        </div>
+        <div class="card">
+          <div class="card__img-block">
+            <img class="card__img" src="./assets/img/pages/accueil/section3/men_atwork.svg">
+          </div>
+          <h1 class="card__title">Installation par nos experts</h1>
+          <p class="card__desc">Un technicien viendra installer la ou les appareils choisi.</p>
+        </div>
+        <div class="card">
+          <div class="card__img-block">
+            <img class="card__img" src="./assets/img/pages/accueil/section3/maintenance.svg">
+          </div>
+          <h1 class="card__title">Maitenance de vos produits</h1>
+          <p class="card__desc">Tous les 5 mois nous viendrons effectuer une maintenance de votre adoucisseur O’Pure.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section4">
+      <article class="article">
+        <img class="article__img__background" src="./assets/img/pages/accueil/section4/house-exterior.jpg"
+          loading="lazy">
+        <div class="article__img__background_shadow"></div>
+        <img class="article__img" src="./assets/img/pages/accueil/section4/house-exterior.jpg" loading="lazy"
+          alt="Maison de famille">
+        <div class="article__container">
+          <div class="title--primary">
+            <h1 class="title">O’Pure spécialiste de l’eau</h1>
+          </div>
+          <div class="desc">
+            <p>Particulier ou entreprise ? O’Pure apporte quotidiennelent une eau pure et sans calcaire à de nombreux
+              particuliers et entreprises.
+              <br><br>
+              Grâce aux adoucisseurs et filtres O’Pure :<br><br>
+            </p>
+            <ul>
+              <li>Protégez votre maison et vos domestiques</li>
+              <li>Présevez votre santé et la santé de vos enfants</li>
+              <li>Réduisez votre consommation et le prix de vos entretiens</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <hr class="separator--multicolor">
+      <article class="article">
+        <img class="article__img" src="./assets/img/pages/accueil/section4/map.png" loading="lazy"
+          alt="Zone de déplacement">
+        <div class="article__container">
+          <div class="title--primary">
+            <h1 class="title">Implantation</h1>
+          </div>
+          <div class="desc">
+            <p>Implanté dans le VAR nous sommes disponible dans toute la région Provence-Alpes-Côte d’Azur :<br><br>
+            </p>
+            <ul>
+              <li>Vaucluse</li>
+              <li>Hautes Alpes</li>
+              <li>Bouches du rhône</li>
+              <li>Var</li>
+              <li>Aples de haute-provence</li>
+              <li>Alpes maritimes</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="prefooter">
+      <section class="prefooter__section">
+        <h3>Nos solutions professionnelles</h3>
+        <ul>
+          <li>
+            <a href="#">Filtre d’eau</a>
+          </li>
+          <li>
+            <a href="#">Adoucisseur d’eau</a>
+          </li>
+        </ul>
+      </section>
+      <section class="prefooter__section">
+        <h3>Nos Services & engagements</h3>
+        <ul>
+          <li>
+            <a href="#">Préservez votre santé</a>
+          </li>
+          <li>
+            <a href="#">Une eau pure et sans bactérie</a>
+          </li>
+          <li>
+            <a href="#">Garder votre linge d’état d’origine</a>
+          </li>
+          <li>
+            <a href="#">Faites des économies allant jusqu’à 30%</a>
+          </li>
+        </ul>
+      </section>
+      <section class="prefooter__section">
+        <h3>Nous contacter</h3>
+        <ul>
+          <li>
+            <a href="#">Demander un devis gratuit</a>
+          </li>
+          <li>
+            <a href="#">Renseignement filtre O’Pure</a>
+          </li>
+          <li>
+            <a href="#">Renseignement adoucisseur O’Pure</a>
+          </li>
+          <li>
+            <a href="#">Contacter votre service client</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="footer__section links">
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Cookie</a>
+      <a href="#">Recrutement</a>
+      <a href="#">À propos</a>
+    </section>
+    <section class="footer__section copywrite">
+      <h1>©2023 OPure-Pacca.fr</h1>
+    </section>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+  integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="./assets/js/nav.js"></script>
+<script src="./assets/js/pages/accueil/hero.js"></script>
+<script src="./assets/js/pages/accueil/onscroll.js"></script>
+
+</html>

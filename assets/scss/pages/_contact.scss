@@ -1,0 +1,476 @@
+.contact-page{
+    .hero{
+        margin-top: 6.5rem;//xs nav height
+        position: relative;
+        height: 20rem;
+        background-image: url('../img/pages/contact/hero/hero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        box-shadow: inset 5px 5px 13px 4px rgba(0,0,0,0.25);
+      
+        @include sm{
+          height: 20rem;
+        }
+        @include md{
+          height: 25rem;
+          margin-top: 8rem;
+        }
+        @include lg{
+          height: 35rem;
+          margin-top: 10rem;
+        }
+        @include xl{
+          height: 35rem;
+          margin-top: 10rem;
+        }
+      
+        .hero__content{
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-wrap: nowrap;
+          margin-right: 1.5rem;
+          @include md{
+            margin-right: 2rem;
+          }
+          @include lg{
+            margin-right: 2rem;
+          }
+          @include xl{
+            margin-right: 3rem;
+          }
+        }
+        h1{
+          display: block;
+          padding: .5rem;
+          font-family: $font-raleway;
+          font-size: $font-extralarge-size-xs;
+          font-weight: 900;
+          letter-spacing: .1rem;
+          color: #ffffff;
+          background-color: rgba($color-primary, .8);
+          text-transform: uppercase;
+          @include sm{
+            font-size: $font-extralarge-size-sm;
+          }
+          @include md{
+            font-size: $font-extralarge-size-md;
+          }
+          @include lg{
+            font-size: $font-extralarge-size-lg;
+          }
+          @include xl{
+            font-size: $font-extralarge-size-lg;
+          }
+        }
+      
+      }
+
+      .section1{
+
+        .blocks{
+      
+          @include gt-sm{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+          }
+          .block{
+            margin-top: $margin-y-medium-size-xs;
+            margin-bottom: $margin-y-medium-size-xs;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+            @include sm{
+              margin-top: $margin-y-medium-size-sm;
+              margin-bottom: $margin-y-medium-size-sm;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+            }
+            @include md{
+              margin-top: $margin-y-medium-size-md;
+              margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+            }
+            @include lg{
+              margin-top: $margin-y-medium-size-md;
+              margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+            }
+            @include xl{
+              margin-top: $margin-y-medium-size-md;
+              margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+            }
+          }
+      
+          .other{
+            @include gt-sm{
+              width: 35%;
+            }
+            .desc{
+              margin-top: $margin-y-medium-size-xs;
+              @include sm{
+                margin-top: calc($margin-y-medium-size-sm / 1.5);
+              }
+              @include md{
+                margin-top: calc($margin-y-medium-size-md / 2.2);
+              }
+              @include lg{
+                margin-top: calc($margin-y-medium-size-md / 2);
+              }
+              @include xl{
+                margin-top: calc($margin-y-medium-size-md / 2);
+              }
+              .desc__block{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: nowrap;
+                margin-bottom: 1rem;
+                &:last-child{
+                  margin-bottom: 0;
+                }
+          
+                img{
+                  height: $font-medium-size-xs;
+                  @include sm{
+                    height: $font-medium-size-sm;
+                  }
+                  @include md{
+                    height: $font-medium-size-md;
+                  }
+                  @include lg{
+                    height: $font-medium-size-lg;
+                  }
+                  @include xl{
+                    height: $font-medium-size-lg;
+                  }
+                }
+                p{
+                  margin-left: 1rem;
+                  font-family: $font-raleway;
+                  font-size: $font-medium-size-xs;
+                  color: #000000;
+                  @include sm{
+                    font-size: $font-medium-size-sm;
+                  }
+                  @include md{
+                    font-size: $font-medium-size-md;
+                  }
+                  @include lg{
+                    font-size: $font-medium-size-lg;
+                  }
+                  @include xl{
+                    font-size: $font-medium-size-lg;
+                  }
+                  .color{
+                    font-family: $font-helvetica;
+                    color: $color-primary;
+                  }
+                }
+              }
+            }
+          }
+          .form{
+            @include gt-sm{
+              width: 60%;
+            }
+            .desc{
+              margin-top: $margin-y-medium-size-xs;
+              @include sm{
+                margin-top: calc($margin-y-medium-size-sm / 1.5);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: flex-start;
+              }
+              @include md{
+                margin-top: calc($margin-y-medium-size-md / 2.2);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: flex-start;
+              }
+              @include lg{
+                margin-top: calc($margin-y-medium-size-md / 2);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: flex-start;
+              }
+              @include xl{
+                margin-top: calc($margin-y-medium-size-md / 2);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: flex-start;
+              }
+          
+              .input__group{
+                margin-top: calc($margin-y-medium-size-xs / 2);
+                width: 100%;
+                @include gt-xs{
+                  width: 70%;
+                }
+                @include sm{
+                  &:nth-child(2){
+                    margin-top: 0;
+                  }
+                  &:not(.textarea){
+                    width: 45%;
+                  }
+                  &.textarea{
+                    width: 100%;
+                  }
+                }
+                @include md{
+                  &:nth-child(2){
+                    margin-top: 0;
+                  }
+                  &:not(.textarea){
+                    width: 45%;
+                  }
+                  &.textarea{
+                    width: 100%;
+                  }
+                }
+                @include lg{
+                  &:nth-child(2){
+                    margin-top: 0;
+                  }
+                  &:not(.textarea){
+                    width: 45%;
+                  }
+                  &.textarea{
+                    width: 100%;
+                  }
+                }
+                @include xl{
+                  &:nth-child(2){
+                    margin-top: 0;
+                  }
+                  &:not(.textarea){
+                    width: 45%;
+                  }
+                  &.textarea{
+                    width: 100%;
+                  }
+                }
+                &:first-child{
+                  margin-top: 0;
+                }
+                input, textarea{
+                  width: 100%;
+                }
+              }
+          
+              p.information{
+                margin-top: 1.5rem;
+                padding-left: 1rem;
+                color: #C4C4C4;
+                font-family: $font-raleway;
+                font-size: $font-medium-size-xs;
+                position: relative;
+                @include sm{
+                  font-size: $font-medium-size-sm;
+                }
+                @include md{
+                  font-size: $font-medium-size-md;
+                }
+                @include lg{
+                  font-size: $font-medium-size-lg;
+                }
+                @include xl{
+                  font-size: $font-medium-size-lg;
+                }
+          
+                &:before{
+                  content: '*';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  font-family: $font-raleway;
+                  font-size: $font-medium-size-xs;
+                  color: $color-pink;
+                  @include sm{
+                    font-size: $font-medium-size-sm;
+                  }
+                  @include md{
+                    font-size: $font-medium-size-md;
+                  }
+                  @include lg{
+                    font-size: $font-medium-size-lg;
+                  }
+                  @include xl{
+                    font-size: $font-medium-size-lg;
+                  }
+                }
+              }
+              .form__submit{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 90%;
+                
+                @include xs{
+                  max-width: inherit;
+                }
+                @include gt-xs{
+                  align-self: flex-end;
+                  margin-left: auto;
+                  margin-right: inherit;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section2{
+        margin-top: $margin-y-medium-size-xs;
+        margin-bottom: $margin-y-medium-size-xs;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        @include sm{
+          margin-top: $margin-y-medium-size-sm;
+          margin-bottom: $margin-y-medium-size-sm;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include md{
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include lg{
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+        @include xl{
+          margin-top: $margin-y-medium-size-md;
+          margin-bottom: $margin-y-medium-size-md;// COMBAK: revenir plus tard et supprimer ça - mettre le style directement sur le footer
+        }
+      
+        .desc{
+          margin-top: $margin-y-medium-size-xs;
+          @include sm{
+            margin-top: calc($margin-y-medium-size-sm / 1.5);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+          @include md{
+            margin-top: calc($margin-y-medium-size-md / 2.2);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+          @include lg{
+            margin-top: calc($margin-y-medium-size-md / 2);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+          @include xl{
+            margin-top: calc($margin-y-medium-size-md / 2);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+      
+          .input__group{
+            margin-top: calc($margin-y-medium-size-xs / 2);
+            width: 70%;
+            @include sm{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            @include md{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            @include lg{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            @include xl{
+              &:nth-child(2){
+                margin-top: 0;
+              }
+              &:not(.textarea){
+                width: 45%;
+              }
+              &.textarea{
+                width: 100%;
+              }
+            }
+            &:first-child{
+              margin-top: 0;
+            }
+            input, textarea{
+              width: 100%;
+            }
+          }
+      
+          p.information{
+            margin-top: 1.5rem;
+            padding-left: 1rem;
+            color: #C4C4C4;
+            font-family: $font-raleway;
+            font-size: $font-medium-size-xs;
+            position: relative;
+            @include sm{
+              font-size: $font-medium-size-sm;
+            }
+            @include md{
+              font-size: $font-medium-size-md;
+            }
+            @include lg{
+              font-size: $font-medium-size-lg;
+            }
+            @include xl{
+              font-size: $font-medium-size-lg;
+            }
+      
+            &:before{
+              content: '*';
+              position: absolute;
+              top: 0;
+              left: 0;
+              font-family: $font-raleway;
+              font-size: $font-medium-size-xs;
+              color: $color-pink;
+              @include sm{
+                font-size: $font-medium-size-sm;
+              }
+              @include md{
+                font-size: $font-medium-size-md;
+              }
+              @include lg{
+                font-size: $font-medium-size-lg;
+              }
+              @include xl{
+                font-size: $font-medium-size-lg;
+              }
+            }
+          }
+        }
+      }
+}

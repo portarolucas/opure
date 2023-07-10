@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  {% block head %}{% endblock %}
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a href="{{ path_for('accueil') }}">
+        <div class="logo">
+          <img src="/assets/img/logo.png" alt="OPure logo">
+          <h1>O<span class="color">'</span>Pure</h1>
+        </div>
+      </a>
+      <div class="large-section">
+        <div class="menu">
+          <ul>
+            <li class="{{ route_name == 'accueil' ? 'selected' }}"><a href="{{ path_for('accueil') }}">Accueil</a></li>
+            <li class="menu--scrolling">Nos services</li>
+            <li class="{{ route_name == 'blog' ? 'selected' }}"><a href="{{ path_for('blog') }}">Blog</a></li>
+            <li class="{{ route_name == 'contact' ? 'selected' }}"><a href="{{ path_for('contact') }}">contacter</a></li>
+          </ul>
+        </div>
+        <div class="phone-icon">
+          <a href="tel:0683104167"><img src="/assets/img/_nav/phone.svg" alt="Téléphone" /></a>
+        </div>
+      </div>
+      <div class="menu-burger">
+        <div class="menu__line line-1"></div>
+        <div class="menu__line line-2"></div>
+        <div class="menu__line line-3"></div>
+      </div>
+    </div>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+  <footer class="footer">
+    <section class="footer__section">
+      <h3>Découvrez O’Pure :</h3>
+      <p>
+        La qualité de nos produits et de notre Service fait de Culligan le spécialiste incontournable des solutions de traitement de l'eau.
+        <br><a href="#">En savoir plus ici</a>
+      </p>
+    </section>
+    <hr>
+    <section class="footer__section">
+      <h3>Lien du site</h3>
+      <ul>
+        <li><a href="{{ path_for('accueil') }}">Accueil</a></li>
+        <li><a href="#">Nos services</a></li>
+        <li><a href="{{ path_for('blog') }}">Blog</a></li>
+        <li><a href="{{ path_for('contact') }}">Nous contacter</a></li>
+      </ul>
+    </section>
+    <hr>
+    <section class="footer__section">
+      <div class="logo">
+        <img src="/assets/img/logo.png" alt="OPure logo">
+        <h1>O<span class="color">'</span>Pure</h1>
+      </div>
+      <p>
+        Tous droits résérvés.<br>
+        <a href="{{ path_for('accueil') }}">www.opure-paca.fr</a>
+      </p>
+    </section>
+  </footer>
+
+</body>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="./assets/js/nav.js"></script>
+{% block script %}{% endblock %}
+</html>
